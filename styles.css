@@ -369,6 +369,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 #footer-links a{
@@ -453,8 +454,8 @@ footer {
     }
 
     .card-img {
-        min-width: 150px;
-        min-height: 150px;
+        /* min-width: 150px;
+        min-height: 150px; */
         width: 20vw;
         height: 20vw;
     }
@@ -463,7 +464,7 @@ footer {
         width: 100%;
     } 
     .card-info {
-        width: calc(100% - 15px - 150px);
+        width: calc(100% - 15px - 20vw);
         justify-content: space-evenly;
     }
 
@@ -554,14 +555,14 @@ footer {
         width: 100%;
     } 
     .card-img {
-        min-width: 130px;
-        min-height: 130px;
-        width: 130px;
-        height: 130px;
+        /* min-width: 130px;
+        min-height: 130px; */
+        width: 20vw;
+        height: 20vw;
     }
 
     .card-info {
-        width: calc(100% - 15px - 130px);
+        width: calc(100% - 15px - 20vw);
         height: 100%;
     }
 
@@ -600,5 +601,21 @@ footer {
 
     #footer-links {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #location-wrapper a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #location-wrapper a{
+        display: none;
+    }
+
+    #logo {
+        display: none;
     }
 }
