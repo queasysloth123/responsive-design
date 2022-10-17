@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Craigslist</title>
+        <meta name="description" content="">
+        <link rel = "icon" href="./imgs/logo.png" type = "image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Domine&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="top-bar">
+            <div id="menu-logo-wrapper">
+                <div id="menu-wrapper" onclick="expand()">
+                    <img id="menu-icon" src="./imgs/menu.png">
+                </div>
+                <div id="logo-wrapper">
+                    <img id="logo" src="./imgs/logo.png">
+                    <h1>Craigslist</h1>
+                </div>
+            </div>
+            <div id="search-bar-wrapper">
+                <select name="categories" id="search-categories">
+                    <option value="All">All</option>
+                    <option value="Community">Community</option>
+                    <option value="Housing">Housing</option>
+                    <option value="Jobs">Jobs</option>
+                    <option value="Services">Services</option>
+                    <option value="For Sale">For Sale</option>
+                    <option value="Forums">Forums</option>
+                    <option value="Gigs">Gigs</option>
+                    <option value="Other">Other</option>
+
+                </select>
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button id="search-button">
+                    <img id="search-icon" src="./imgs/search.png">
+                </button>
+            </div>
+            <div id="location-wrapper">
+                <img id="loc-icon" src="./imgs/pin.png">
+                <a href="url">Providence, Rhode Island</a>
+            </div>
+            <div class="inline-wrapper">
+                <div id="calendar-wrapper">
+                    <img id="cal-icon" src="./imgs/calendar.png">
+                </div>
+                <button id="login-button">Login</button>
+            </div>
+        </div>
+        <div id="search-bar-wrapper-mobile">
+            <select name="categories" id="search-categories">
+                <option value="All">All</option>
+                <option value="Community">Community</option>
+                <option value="Housing">Housing</option>
+                <option value="Jobs">Jobs</option>
+                <option value="Services">Services</option>
+                <option value="For Sale">For Sale</option>
+                <option value="Forums">Forums</option>
+                <option value="Gigs">Gigs</option>
+                <option value="Other">Other</option>
+
+            </select>
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button">
+                <img id="search-icon" src="./imgs/search.png">
+            </button>
+        </div>
+        <div id="nav-bar">
+            <ul>
+                <li><a href="#community"><img class="nav-icons" src="./imgs/community.png"> Community</a></li>
+                <li><a href="#housing"><img class="nav-icons" src="./imgs/home.png">Housing</a></li>
+                <li><a href="#jobs"><img class="nav-icons" src="./imgs/job.png">Jobs</a></li>
+                <li><a href="#for-sale"><img class="nav-icons" src="./imgs/shopping.png">For Sale</a></li>
+                <li ><a href="#forums"><img class="nav-icons" src="./imgs/forum.png">Forums</a></li>
+                <li><a href="#gigs"><img class="nav-icons" src="./imgs/job.png">Gigs</a></li>
+                <li><a href="#other"><img class="nav-icons" src="./imgs/more.png">Other</a></li>
+            </ul>
+        </div>
+        <div id="main-wrapper">
+            <div id="side-bar">
+                <div id="exit-wrapper" onclick="collapse()">
+                    <img id="exit-icon" src="./imgs/close.png">
+                </div>
+                <ul id="side-bar-list">
+                    <li><a href="">Antiques</a></li>
+                    <li><a href="">Appliances</a></li>
+                    <li id="sub-category-active"><a href="">Arts & Crafts</a></li>
+                    <li><a href="">ATV / UTV / Snowmobiles</a></li>
+                    <li><a href="">Auto Parts</a></li>
+                    <li><a href="">Aviation</a></li>
+                    <li><a href="">Baby & Kid</a></li>
+                    <li><a href="">Barter</a></li>
+                    <li><a href="">Beauty & Health</a></li>
+                    <li><a href="">Bike Parts</a></li>
+                    <li><a href="">Bikes</a></li>
+                    <li><a href="">Boat Parts</a></li>
+                    <li><a href="">Boats</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Cars & Trucks</a></li>
+                    <li><a href="">CD / DVD / VHS</a></li>
+                    <li><a href="">Cell Phones</a></li>
+                    <li><a href="">Clothes & Accessories</a></li>
+                </ul>
+            </div>
+            <div id="content-wrapper">
+                <h2 id="section-title">Arts & Crafts</h2>
+                <div id="item-list">
+                    <div class="item-card">
+                        <div class="card-img">
+                            <img class="item-img" src="./imgs/cotton-blanket.jpeg">
+                        </div>
+                        <div class="card-info">
+                            <div class="name-price-wrapper">
+                                <h2 class="item-name">100% Cotton Heavy Black Fabric 85" x 68"</h2>
+                                <h3 class="item-price">$25</h3>
+                            </div>
+                            <h4 class="item-date">Saturday, October 15</h4>
+                            <p class="item-desc">All reasonable offers will be considered. Please email me first, and if you think you are interested we can talk on the phone and make arrangements to look at the item. Check out my other stuff for sale using the link under the map, and don't forget to check your junk email. Thanks, Pat</p>
+                            <div class="loc-fav-wrapper">
+                                <div class="item-loc-wrapper">
+                                    <a><img class="card-pin" src="./imgs/pin.png">North Smithfield</a>
+                                </div>
+                                <div class="fav-wrapper">
+                                    <img class="unfav-icon" src="./imgs/fav.png" onclick="fav(this)">
+                                    <img class="fav-icon" src="./imgs/fav-holder.png" onclick="unfav(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="item-card">
+                        <div class="card-img">
+                            <img class="item-img" src="./imgs/oil-painting.jpeg">
+                        </div>
+                        <div class="card-info">
+                            <div class="name-price-wrapper">
+                                <h2 class="item-name">Mid-century oil painting singed by artist</h2>
+                                <h3 class="item-price">$400</h3>
+                            </div>
+                            <h4 class="item-date">Thursday, October 13</h4>
+                            <p class="item-desc">This is a beautiful mid century oil painting signed by artist it's in excellent condition asking 400 or best ...</p>
+                            <div class="loc-fav-wrapper">
+                                <div class="item-loc-wrapper">
+                                    <a><img class="card-pin" src="./imgs/pin.png">Chepachet</a>
+                                </div>
+                                <div class="fav-wrapper">
+                                    <img class="unfav-icon" src="./imgs/fav.png" onclick="fav(this)">
+                                    <img class="fav-icon" src="./imgs/fav-holder.png" onclick="unfav(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="item-card">
+                        <div class="card-img">
+                            <img class="item-img" src="./imgs/art-half-moon.jpeg">
+                        </div>
+                        <div class="card-info">
+                            <div class="name-price-wrapper">
+                                <h2 class="item-name">Historical Art-Half Moon on the Hudson</h2>
+                                <h3 class="item-price">$250</h3>
+                            </div>
+                            <h4 class="item-date">Monday, October 10</h4>
+                            <p class="item-desc">This listing is of a giclee work on canvas called Half Moon on the Hudson by John Zaccheo. It is signed in the right hand corner and numbered 220/250 in the left hand corner. It is in good enough condition for a gift , or to hang in your office or home right away. When the quadricentennial celcbration for Henry Hudson's 1609 journey up the Hudson River was announced,John Zaccheo created a limited edition print of his painting of Hudson's boat-the Half Moon. This beautiful piece measures approximately 28" tall and 3' long framed. This would be a great piece of history in art form to own. Please call.</p>
+                            <div class="loc-fav-wrapper">
+                                <div class="item-loc-wrapper">
+                                    <a><img class="card-pin" src="./imgs/pin.png">Providence</a>
+                                </div>
+                                <div class="fav-wrapper">
+                                    <img class="unfav-icon" src="./imgs/fav.png" onclick="fav(this)">
+                                    <img class="fav-icon" src="./imgs/fav-holder.png" onclick="unfav(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="item-card">
+                        <div class="card-img">
+                            <img class="item-img" src="./imgs/glass-vases.jpeg">
+                        </div>
+                        <div class="card-info">
+                            <div class="name-price-wrapper">
+                                <h2 class="item-name">Custom Made One of a Kind Decor</h2>
+                                <h3 class="item-price">$9</h3>
+                            </div>
+                            <h4 class="item-date">Sunday, October 9</h4>
+                            <p class="item-desc">One of a kind custom made vases/decor...all different sizes..shapes and colors.</p>
+                            <div class="loc-fav-wrapper">
+                                <div class="item-loc-wrapper">
+                                    <a><img class="card-pin" src="./imgs/pin.png">Warwick</a>
+                                </div>
+                                <div class="fav-wrapper">
+                                    <img class="unfav-icon" src="./imgs/fav.png" onclick="fav(this)">
+                                    <img class="fav-icon" src="./imgs/fav-holder.png" onclick="unfav(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="item-card">
+                        <div class="card-img">
+                            <img class="item-img" src="./imgs/painting-stretchers.jpeg">
+                        </div>
+                        <div class="card-info">
+                            <div class="name-price-wrapper">
+                                <h2 class="item-name">1Painting Stretchers</h2>
+                                <h3 class="item-price">$5</h3>
+                            </div>
+                            <h4 class="item-date">Saturday, October 15</h4>
+                            <p class="item-desc">I have about 20 stretchers that are 70cm x 90cm (27.5” x 35.5”), and a few that are a little bigger. They are used but perfectly fine. They all are tight and keyed, ready to be stretched. $5 a piece, but I’m flexible if someone wants to buy several or the whole bunch.</p>
+                            <div class="loc-fav-wrapper">
+                                <div class="item-loc-wrapper">
+                                    <a><img class="card-pin" src="./imgs/pin.png">Narragansett</a>
+                                </div>
+                                <div class="fav-wrapper">
+                                    <img class="unfav-icon" src="./imgs/fav.png" onclick="fav(this)">
+                                    <img class="fav-icon" src="./imgs/fav-holder.png" onclick="unfav(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="item-card">
+                        <div class="card-img">
+                            <img class="item-img" src="./imgs/sewing-machine.jpeg">
+                        </div>
+                        <div class="card-info">
+                            <div class="name-price-wrapper">
+                                <h2 class="item-name">Bernina 950 Semi Industrial Sewing Machine, Table, ...</h2>
+                                <h3 class="item-price">$1,650</h3>
+                            </div>
+                            <h4 class="item-date">Friday, October 14</h4>
+                            <p class="item-desc">This rotary hook sewing machine can do 2000 stitches a minute, but still has all the patterns of a a domestic machine. Rugged and powerful. Comes with Bernina feet, table, new servo motor, light. Perfect for home business or serious sewer. Free delivery and setup. 60 day warranty.</p>
+                            <div class="loc-fav-wrapper">
+                                <div class="item-loc-wrapper">
+                                    <a><img class="card-pin" src="./imgs/pin.png">Peace Date</a>
+                                </div>
+                                <div class="fav-wrapper">
+                                    <img class="unfav-icon" src="./imgs/fav.png" onclick="fav(this)">
+                                    <img class="fav-icon" src="./imgs/fav-holder.png" onclick="unfav(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
