@@ -222,6 +222,15 @@ body {
     align-items: center;
 }
   
+#side-bar li:hover{
+    background-color:var(--purple);
+}
+
+#side-bar li a:hover{
+    color:white;
+}
+
+
 #sub-category-active {
     background-color: var(--purple);
 }
@@ -557,12 +566,12 @@ footer {
     .card-img {
         /* min-width: 130px;
         min-height: 130px; */
-        width: 20vw;
-        height: 20vw;
+        width: 30vw;
+        height: 30vw;
     }
 
     .card-info {
-        width: calc(100% - 15px - 20vw);
+        width: calc(100% - 15px - 22vw);
         height: 100%;
     }
 

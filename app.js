@@ -20,3 +20,11 @@ function expand() {
 function collapse() {
     document.getElementById("side-bar").style.display = "none"
 }
+
+function buttonPress(elm) {
+    elm.style.backgroundColor = "#461558"
+}
+
+function buttonUnpress(elm) {
+    elm.style.backgroundColor = "#6A2983"
+}
